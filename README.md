@@ -242,3 +242,5 @@ The workaround is to manually create a token in Terraform Cloud
 https://app.terraform.io/app/settings/tokens?source=terraform-login
 ```
 When you copy the token it will not show on the screen but its there! just hit enter.
+
+We have automated the process using a bash script[/bin/generate_tfrc_credentials]
