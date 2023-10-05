@@ -51,3 +51,5 @@ resource "aws_s3_object" "error_html" {
   etag = filemd5(var.error_html_filepath)
 
 }
+# https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/caller_identity
+data "aws_caller_identity" "current" {}
