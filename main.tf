@@ -36,3 +36,14 @@ provider "terratowns" {
 #  error_html_filepath = var.error_html_filepath
 #  content_version = var.content_version
 #}
+
+resource "terratowns_home" "home" {
+  name = "Why you should watch Heartstopper"
+  description = <<DESCRIPTION
+Heartstopper is a British coming-of-age romantic comedy-drama television series on Netflix, written and created by Alice Oseman and based on her webcomic and graphic novel of the same name. The series primarily tells the story of Charlie Spring (Joe Locke), a gay schoolboy who falls in love with classmate Nick Nelson (Kit Connor), whom he sits next to in his new form. It also explores the lives of their friends Tao Xu (William Gao), Elle Argent (Yasmin Finney), Isaac Henderson (Tobie Donovan), Tara Jones (Corinna Brown) and Darcy Olsson (Kizzy Edgell).
+DESCRIPTION
+  #domain_name = module.terrahouse_aws.cloudfront_url
+  domain_name = "3fdq3gz.cloudfront.net"
+  town = "video-valley"
+  content_version = 1
+}
